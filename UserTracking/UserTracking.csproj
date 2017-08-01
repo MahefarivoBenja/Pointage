@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DA36B3F-C2A8-46E8-A794-E3A66682B656}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UserTracking</RootNamespace>
+    <AssemblyName>UserTracking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Si\Desktop\pict\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3C11A482E2A633F595B2FF2A7464F14B485F1224</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>UserTracking_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net40\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net40\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AffectationVigie\C_Code3.cs" />
+    <Compile Include="Controllers\AffectationVigie\C_CrudDataAffectionVigie.cs" />
+    <Compile Include="Controllers\AffectationVigie\C_ManipulateData.cs" />
+    <Compile Include="Controllers\AffectationVigie\C_NomVigie.cs" />
+    <Compile Include="Controllers\AffectationVigie\C_PopulateGrid.cs" />
+    <Compile Include="Controllers\CCBoxItem.cs" />
+    <Compile Include="Controllers\CheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\C_Data.cs" />
+    <Compile Include="Controllers\C_ListUserTracking.cs" />
+    <Compile Include="Controllers\HexaToString.cs" />
+    <Compile Include="Controllers\MySession.cs" />
+    <Compile Include="Controllers\NomVigie\C_NomVigie.cs" />
+    <Compile Include="Models\AffectationVigie\M_Code3.cs" />
+    <Compile Include="Models\AffectationVigie\M_CrudDataAffectionVigie.cs" />
+    <Compile Include="Models\AffectationVigie\M_NomVigie.cs" />
+    <Compile Include="Models\AffectationVigie\M_PopulateGrid.cs" />
+    <Compile Include="Models\M_Connection.cs" />
+    <Compile Include="Models\M_Data.cs" />
+    <Compile Include="Models\M_ListUserTracking.cs" />
+    <Compile Include="Models\NomVigie\M_NomVigie.cs" />
+    <Compile Include="Views\Affectation\AffectationVigie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Affectation\AffectationVigie.Designer.cs">
+      <DependentUpon>AffectationVigie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Affectation\V_DetailPers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Affectation\V_DetailPers.Designer.cs">
+      <DependentUpon>V_DetailPers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NomVigie\V_AddNewVigie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NomVigie\V_AddNewVigie.Designer.cs">
+      <DependentUpon>V_AddNewVigie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NomVigie\V_Vigie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NomVigie\V_Vigie.Designer.cs">
+      <DependentUpon>V_Vigie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashScreen\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SplashScreen\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserTracking.Designer.cs">
+      <DependentUpon>UserTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\V_DetailTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\V_DetailTracking.Designer.cs">
+      <DependentUpon>V_DetailTracking.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Affectation\AffectationVigie.resx">
+      <DependentUpon>AffectationVigie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Affectation\V_DetailPers.resx">
+      <DependentUpon>V_DetailPers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NomVigie\V_AddNewVigie.resx">
+      <DependentUpon>V_AddNewVigie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NomVigie\V_Vigie.resx">
+      <DependentUpon>V_Vigie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SplashScreen\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserTracking.resx">
+      <DependentUpon>UserTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\V_DetailTracking.resx">
+      <DependentUpon>V_DetailTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UserTracking_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
